@@ -1,0 +1,16 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/nav.ejs") %>
+
+    <h3 class="all-h3">Generated QR code will be shown below</h3>
+
+    <div class="url">
+        <p><%= title %></p>
+        <img src=<%= src %> alt="qr">
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+
+</body>
+</html>

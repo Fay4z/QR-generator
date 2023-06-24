@@ -1,0 +1,25 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="wrapper-gen">
+        <form action="/qr" method="post">
+            <div class="name-div">
+                <p>Give a Name</p>
+                <input type="text" name="title">
+            </div>
+            <div class="qr-web-div">
+                <p>Type a website to Generate QR code</p>
+                <input type="text" name="site">
+            </div>
+            <div class="button-div">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+
+</body>
+</html>
